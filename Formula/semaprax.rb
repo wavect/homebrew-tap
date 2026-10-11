@@ -11,11 +11,13 @@ class Semaprax < Formula
   depends_on :macos
 
   on_macos do
-    depends_on arch: :arm64
-
     on_arm do
-      url "https://github.com/wavect/semaprax/releases/download/v0.8.0/semaprax-v0.8.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c281aa274650e9003487f738a349fb746b27bc5575276cae63f50cc81a155ff6"
+      url "https://github.com/wavect/semaprax/releases/download/v0.9.0/semaprax-v0.9.0-aarch64-apple-darwin.tar.gz"
+      sha256 "2cc1a432703413324549b9a54bef58d6134374ae9f721e542cde53877880de24"
+    end
+    on_intel do
+      url "https://github.com/wavect/semaprax/releases/download/v0.9.0/semaprax-v0.9.0-x86_64-apple-darwin.tar.gz"
+      sha256 "7af4ddf026c806e1c588bfbab7e1ec5df55db31f398baeaef3d7a1e12b363547"
     end
   end
 
