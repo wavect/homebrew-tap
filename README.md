@@ -1,6 +1,6 @@
 # Wavect Homebrew tap
 
-Prebuilt [SEMAPRAX](https://github.com/wavect/semaprax) toolchain for Apple Silicon macOS.
+Prebuilt [SEMAPRAX](https://github.com/wavect/semaprax) v0.9.0 toolchain for Apple Silicon and Intel macOS.
 
 ```sh
 brew install wavect/tap/semaprax
@@ -13,3 +13,8 @@ The formula installs the published release archive's `semaprax` (full build) and
 `scripts/channel-manifests.py` in the main repository from each release's
 `SHA256SUMS` and `release-manifest.json`; see `packaging/homebrew/README.md` there.
 Do not edit `Formula/semaprax.rb` by hand.
+
+The v0.9.0 formula passed native install, starter result 42, strict audit and
+removal on both macOS architectures in
+[installation qualification](https://github.com/wavect/semaprax/actions/runs/38155570863).
+The Apple Silicon gate also upgraded the previous v0.8.0 formula.
